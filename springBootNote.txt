@@ -1,0 +1,35 @@
+Spring project : Every feature you have to add dependency
+1.
+-webmvc + config
+-hibernate-validator + config
+-commons-file-upload + config
+2.Security : dependency + config
+3.Database : dependency + config
+Problems
+- keep right version
+- invernal resource view resolver has to be added
+- component scan you have to config
+- resolving static files MVC default servlet handler, 
+  or MVC resorver ashiglah yostoi bolno
+Ene buh tohirgoog project burt hiih ni zalhmaar tul SpringBoot garch irsen.
+
+SpringBoot features:
+1.Auto Configuration: @EnableAutoConfiguration
+	@SpringBootApplication notation.g entry class.d nemdeg.
+	@SpringBootApplication  include @EnableAutoConfiguration 
+
+	@EnableAutoConfiguration yaj ajilladag ve? spring.boot-starter-web ->iig pom file-d nemehed
+	Spring Boot automatically have -hibernate-validator
+	And Spring Boot automatically resolve -messages.properties configuration
+2.Opeininated:
+3.Standalone: You can run web app as a standalone application. 
+	If we want to create java based webapp & we want to deploy web app.We have to do following:
+	A.Wrap your Java based app into WAR file
+	B.Pick a server -> Install JDK
+	C.Install server Tomcat to on the C server
+	D.Deploy your war file on the Tomcat server 
+	But if we use SpringBoot:
+	A.Install JDK
+	B.Pak your projectt as a jar
+	C.java.jar groupid.jar
+	tomcat.jar -> inside your application-> So you can run  web app as a stand alone application.
